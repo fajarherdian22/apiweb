@@ -66,3 +66,19 @@ func (controller *DataController) GetFilterName(c *gin.Context) {
 
 	helper.HandleEncodeWriteJson(c, WebResponse)
 }
+
+func (controller *DataController) GetAllPlmn(c *gin.Context) {
+
+	data, err := controller.dataService.GetAllPlmn(c.Request.Context())
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve data"})
+		return
+	}
+	WebResponse := web.WebResponse{
+		Code:   200,
+		Data:   data,
+		Status: true,
+	}
+
+	helper.HandleEncodeWriteJson(c, WebResponse)
+}

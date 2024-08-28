@@ -43,3 +43,9 @@ func (service *DataServiceImpl) GetFilterName(ctx context.Context) ([]repository
 	helper.IsError(err)
 	return data, nil
 }
+
+func (service *DataServiceImpl) GetAllPlmn(ctx context.Context) ([]repository.PlmnTraffic, error) {
+	data, err := service.q.GetAllPlmn(ctx)
+	helper.IsError(err)
+	return data, nil
+}

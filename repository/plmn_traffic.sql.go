@@ -9,6 +9,43 @@ import (
 	"context"
 )
 
+const getAllPlmn = `-- name: GetAllPlmn :many
+SELECT date, moentity, ran_site_city, ran_site_region, ran_site_longitude, ran_site_latitude, ran_site_site_vendor, traffic, traffic_type from plmn_traffic
+`
+
+func (q *Queries) GetAllPlmn(ctx context.Context) ([]PlmnTraffic, error) {
+	rows, err := q.db.QueryContext(ctx, getAllPlmn)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []PlmnTraffic
+	for rows.Next() {
+		var i PlmnTraffic
+		if err := rows.Scan(
+			&i.Date,
+			&i.Moentity,
+			&i.RanSiteCity,
+			&i.RanSiteRegion,
+			&i.RanSiteLongitude,
+			&i.RanSiteLatitude,
+			&i.RanSiteSiteVendor,
+			&i.Traffic,
+			&i.TrafficType,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const getFilterName = `-- name: GetFilterName :many
 SELECT DISTINCT a.ran_site_city, a.ran_site_region from plmn_traffic a
 `

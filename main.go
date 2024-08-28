@@ -51,6 +51,7 @@ func main() {
 		r.GET("/data/date", dataController.GetData)
 		r.GET("/data/city", dataController.GetDataCity)
 		r.GET("/data/filter", dataController.GetFilterName)
+		r.GET("/data/all", dataController.GetAllPlmn)
 	}
 
 	if err := router.Run(":8080"); err != nil {
