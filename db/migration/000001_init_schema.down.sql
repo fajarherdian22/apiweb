@@ -1,1 +1,1 @@
-DROP TABLE IF EXISTS plmn_traffic;
+DROP TABLE IF EXISTS demarcation_site_link;

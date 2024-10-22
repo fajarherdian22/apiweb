@@ -1,5 +1,9 @@
 mysql:
 	docker run --name mysql -e MYSQL_ROOT_PASSWORD=admin1234 -e MYSQL_USER=admin -e MYSQL_PASSWORD=admin1234 -p 3306:3306 -d mysql:latest
+start_mysql:
+	docker start mysql
+stop_mysql:
+	docker stop mysql
 createdb:
 	docker exec -it mysql createdb --username=admin --owner=admin simple_bank
 dropdb:
@@ -14,5 +18,7 @@ test:
 	go test -v -cover ./...
 clearredis:
 	docker exec -it redis redis-cli flushall
+server:
+	go run main.go
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test clearredis
+.PHONY: mysql start_mysql stop_mysql createdb dropdb migrateup migratedown sqlc test clearredis server

@@ -8,8 +8,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func ConDB(conf map[string]string) *sql.DB {
-	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", conf["user"], conf["password"], conf["host"], conf["port"], conf["dbname"]))
+func ConDB(config map[string]string) *sql.DB {
+	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", config["user"], config["password"], config["host"], config["port"], config["dbname"]))
 	if err != nil {
 		panic(err)
 	}
