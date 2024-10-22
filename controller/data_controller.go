@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"fmt"
 	"net/http"
+	"sort"
 
 	"github.com/fajarherdian22/apiweb/helper"
 	"github.com/fajarherdian22/apiweb/model/web"
@@ -19,10 +19,12 @@ func NewDataController(dataService *service.DataServiceImpl) *DataController {
 }
 
 func (controller *DataController) GetCityLink(c *gin.Context) {
+
 	type CityLinkRequest struct {
 		Date string `json:"date" binding:"required"`
 		City string `json:"city" binding:"required"`
 	}
+
 	var req CityLinkRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
 		c.JSON(http.StatusBadRequest, helper.ErrorResponse(err))
@@ -34,7 +36,21 @@ func (controller *DataController) GetCityLink(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve data"})
 		return
 	}
-	fmt.Println(data)
+	WebResponse := web.WebResponse{
+		Code:   200,
+		Data:   data,
+		Status: true,
+	}
+
+	helper.HandleEncodeWriteJson(c, WebResponse)
+}
+
+func (controller *DataController) ListCity(c *gin.Context) {
+	data, err := controller.dataService.ListCity(c)
+	if err != nil {
+		helper.ErrorResponse(err)
+	}
+	sort.Strings(data)
 	WebResponse := web.WebResponse{
 		Code:   200,
 		Data:   data,

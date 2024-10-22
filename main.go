@@ -49,6 +49,7 @@ func main() {
 	r := router.Group("/api/")
 	{
 		r.POST("/data/city", dataController.GetCityLink)
+		r.GET("/data/list/city", dataController.ListCity)
 	}
 
 	if err := router.Run(":8080"); err != nil {

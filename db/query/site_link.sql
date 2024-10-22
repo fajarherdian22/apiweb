@@ -8,7 +8,7 @@ WHERE date = ? and region = ?;
 
 -- name: GetCityData :many
 SELECT * FROM demarcation_site_link
-WHERE date = ? and city = ? LIMIT 10;
+WHERE date = ? and city = ?;
 
 -- name: ListCity :many
 SELECT distinct(city) FROM demarcation_site_link;

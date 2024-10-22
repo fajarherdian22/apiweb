@@ -30,3 +30,10 @@ func (service *DataServiceImpl) GetDataCity(ctx context.Context, Date, city stri
 
 	return data, nil
 }
+
+func (service *DataServiceImpl) ListCity(ctx context.Context) ([]string, error) {
+	data, err := service.q.ListCity(ctx)
+	helper.IsError(err)
+
+	return data, nil
+}

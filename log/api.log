@@ -16,3 +16,17 @@ time="2024-10-23T01:16:33+07:00" level=info at="2024-10-23 01:16:33" ip="[::1]:5
 time="2024-10-23T01:17:08+07:00" level=info at="2024-10-23 01:17:08" ip="[::1]:52845" method=POST payload="map[city:bandung date:2024-10-21]" uri=/api/data/city
 time="2024-10-23T01:38:44+07:00" level=info at="2024-10-23 01:38:44" ip="[::1]:53093" method=POST payload="map[city:ciamis date:2024-10-21]" uri=/api/data/city
 time="2024-10-23T01:42:41+07:00" level=info at="2024-10-23 01:42:41" ip="[::1]:53147" method=POST payload="map[city:ciamis date:2024-10-21]" uri=/api/data/city
+time="2024-10-23T01:54:11+07:00" level=info at="2024-10-23 01:54:11" ip="[::1]:53335" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T01:55:34+07:00" level=info at="2024-10-23 01:55:34" ip="[::1]:53361" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T01:56:42+07:00" level=info at="2024-10-23 01:56:42" ip="[::1]:53383" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T01:57:19+07:00" level=info at="2024-10-23 01:57:19" ip="[::1]:53404" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T01:57:20+07:00" level=info at="2024-10-23 01:57:20" ip="[::1]:53404" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T01:58:57+07:00" level=info at="2024-10-23 01:58:57" ip="[::1]:53438" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:01:28+07:00" level=info at="2024-10-23 02:01:28" ip="[::1]:53497" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:02:10+07:00" level=info at="2024-10-23 02:02:10" ip="[::1]:53522" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:03:00+07:00" level=info at="2024-10-23 02:03:00" ip="[::1]:53546" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:04:29+07:00" level=info at="2024-10-23 02:04:29" ip="[::1]:53574" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:04:34+07:00" level=info at="2024-10-23 02:04:34" ip="[::1]:53574" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:06:53+07:00" level=info at="2024-10-23 02:06:53" ip="[::1]:53610" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:10:09+07:00" level=info at="2024-10-23 02:10:09" ip="[::1]:53649" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-10-23T02:11:22+07:00" level=info at="2024-10-23 02:11:22" ip="[::1]:53659" method=GET payload="map[]" uri=/api/data/list/city
