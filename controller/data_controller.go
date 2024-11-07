@@ -21,7 +21,6 @@ func NewDataController(dataService *service.DataServiceImpl) *DataController {
 func (controller *DataController) GetCityLink(c *gin.Context) {
 
 	var req struct {
-		Date string `json:"date" binding:"required"`
 		City string `json:"city" binding:"required"`
 	}
 
@@ -30,7 +29,7 @@ func (controller *DataController) GetCityLink(c *gin.Context) {
 		return
 	}
 
-	data, err := controller.dataService.GetDataCity(c.Request.Context(), req.Date, req.City)
+	data, err := controller.dataService.GetDataCity(c.Request.Context(), req.City)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve data"})
 		return

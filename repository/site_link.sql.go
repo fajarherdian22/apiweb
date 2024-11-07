@@ -7,20 +7,20 @@ package repository
 
 import (
 	"context"
+	"database/sql"
 )
 
 const getCityData = `-- name: GetCityData :many
-SELECT date, siteid, city, region, ran_site_longitude, ran_site_latitude, site_destination, longitude_destination, latitude_destination, link, type_transport, interface, tlp, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, max_util, capacity, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin FROM demarcation_site_link
-WHERE date = ? and city = ?
+SELECT
+    date, siteid, city, region, longitude, latitude, level_ne_a, ne_a, interface_a, tlp_a, site_destination, ne_b, interface_b, tlp_b, longitude_destination, latitude_destination, level_ne_b, link, type_transport, bandwith, max_util, capacity, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin
+FROM
+    demarcation_site_link
+WHERE
+    city = ?
 `
 
-type GetCityDataParams struct {
-	Date string `json:"date"`
-	City string `json:"city"`
-}
-
-func (q *Queries) GetCityData(ctx context.Context, arg GetCityDataParams) ([]DemarcationSiteLink, error) {
-	rows, err := q.db.QueryContext(ctx, getCityData, arg.Date, arg.City)
+func (q *Queries) GetCityData(ctx context.Context, city string) ([]DemarcationSiteLink, error) {
+	rows, err := q.db.QueryContext(ctx, getCityData, city)
 	if err != nil {
 		return nil, err
 	}
@@ -33,15 +33,24 @@ func (q *Queries) GetCityData(ctx context.Context, arg GetCityDataParams) ([]Dem
 			&i.Siteid,
 			&i.City,
 			&i.Region,
-			&i.RanSiteLongitude,
-			&i.RanSiteLatitude,
+			&i.Longitude,
+			&i.Latitude,
+			&i.LevelNeA,
+			&i.NeA,
+			&i.InterfaceA,
+			&i.TlpA,
 			&i.SiteDestination,
+			&i.NeB,
+			&i.InterfaceB,
+			&i.TlpB,
 			&i.LongitudeDestination,
 			&i.LatitudeDestination,
+			&i.LevelNeB,
 			&i.Link,
 			&i.TypeTransport,
-			&i.Interface,
-			&i.Tlp,
+			&i.Bandwith,
+			&i.MaxUtil,
+			&i.Capacity,
 			&i.IohDataTraffic4g,
 			&i.Availability,
 			&i.Eut,
@@ -62,8 +71,6 @@ func (q *Queries) GetCityData(ctx context.Context, arg GetCityDataParams) ([]Dem
 			&i.SynAckAckDelay,
 			&i.SynSynAckDelay,
 			&i.DownlinkTcpRetransmissionRate,
-			&i.MaxUtil,
-			&i.Capacity,
 			&i.TrafficOrigin,
 			&i.AvailabilityOrigin,
 			&i.EutOrigin,
@@ -99,12 +106,16 @@ func (q *Queries) GetCityData(ctx context.Context, arg GetCityDataParams) ([]Dem
 }
 
 const getDataByDate = `-- name: GetDataByDate :many
-SELECT date, siteid, city, region, ran_site_longitude, ran_site_latitude, site_destination, longitude_destination, latitude_destination, link, type_transport, interface, tlp, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, max_util, capacity, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin FROM demarcation_site_link
-WHERE date = ? and city != ""
+SELECT
+    date, siteid, city, region, longitude, latitude, level_ne_a, ne_a, interface_a, tlp_a, site_destination, ne_b, interface_b, tlp_b, longitude_destination, latitude_destination, level_ne_b, link, type_transport, bandwith, max_util, capacity, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin
+FROM
+    demarcation_site_link
+WHERE
+    city != ""
 `
 
-func (q *Queries) GetDataByDate(ctx context.Context, date string) ([]DemarcationSiteLink, error) {
-	rows, err := q.db.QueryContext(ctx, getDataByDate, date)
+func (q *Queries) GetDataByDate(ctx context.Context) ([]DemarcationSiteLink, error) {
+	rows, err := q.db.QueryContext(ctx, getDataByDate)
 	if err != nil {
 		return nil, err
 	}
@@ -117,15 +128,24 @@ func (q *Queries) GetDataByDate(ctx context.Context, date string) ([]Demarcation
 			&i.Siteid,
 			&i.City,
 			&i.Region,
-			&i.RanSiteLongitude,
-			&i.RanSiteLatitude,
+			&i.Longitude,
+			&i.Latitude,
+			&i.LevelNeA,
+			&i.NeA,
+			&i.InterfaceA,
+			&i.TlpA,
 			&i.SiteDestination,
+			&i.NeB,
+			&i.InterfaceB,
+			&i.TlpB,
 			&i.LongitudeDestination,
 			&i.LatitudeDestination,
+			&i.LevelNeB,
 			&i.Link,
 			&i.TypeTransport,
-			&i.Interface,
-			&i.Tlp,
+			&i.Bandwith,
+			&i.MaxUtil,
+			&i.Capacity,
 			&i.IohDataTraffic4g,
 			&i.Availability,
 			&i.Eut,
@@ -146,8 +166,6 @@ func (q *Queries) GetDataByDate(ctx context.Context, date string) ([]Demarcation
 			&i.SynAckAckDelay,
 			&i.SynSynAckDelay,
 			&i.DownlinkTcpRetransmissionRate,
-			&i.MaxUtil,
-			&i.Capacity,
 			&i.TrafficOrigin,
 			&i.AvailabilityOrigin,
 			&i.EutOrigin,
@@ -183,17 +201,16 @@ func (q *Queries) GetDataByDate(ctx context.Context, date string) ([]Demarcation
 }
 
 const getRegionData = `-- name: GetRegionData :many
-SELECT date, siteid, city, region, ran_site_longitude, ran_site_latitude, site_destination, longitude_destination, latitude_destination, link, type_transport, interface, tlp, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, max_util, capacity, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin FROM demarcation_site_link
-WHERE date = ? and region = ?
+SELECT
+    date, siteid, city, region, longitude, latitude, level_ne_a, ne_a, interface_a, tlp_a, site_destination, ne_b, interface_b, tlp_b, longitude_destination, latitude_destination, level_ne_b, link, type_transport, bandwith, max_util, capacity, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin
+FROM
+    demarcation_site_link
+WHERE
+    region = ?
 `
 
-type GetRegionDataParams struct {
-	Date   string `json:"date"`
-	Region string `json:"region"`
-}
-
-func (q *Queries) GetRegionData(ctx context.Context, arg GetRegionDataParams) ([]DemarcationSiteLink, error) {
-	rows, err := q.db.QueryContext(ctx, getRegionData, arg.Date, arg.Region)
+func (q *Queries) GetRegionData(ctx context.Context, region sql.NullString) ([]DemarcationSiteLink, error) {
+	rows, err := q.db.QueryContext(ctx, getRegionData, region)
 	if err != nil {
 		return nil, err
 	}
@@ -206,15 +223,24 @@ func (q *Queries) GetRegionData(ctx context.Context, arg GetRegionDataParams) ([
 			&i.Siteid,
 			&i.City,
 			&i.Region,
-			&i.RanSiteLongitude,
-			&i.RanSiteLatitude,
+			&i.Longitude,
+			&i.Latitude,
+			&i.LevelNeA,
+			&i.NeA,
+			&i.InterfaceA,
+			&i.TlpA,
 			&i.SiteDestination,
+			&i.NeB,
+			&i.InterfaceB,
+			&i.TlpB,
 			&i.LongitudeDestination,
 			&i.LatitudeDestination,
+			&i.LevelNeB,
 			&i.Link,
 			&i.TypeTransport,
-			&i.Interface,
-			&i.Tlp,
+			&i.Bandwith,
+			&i.MaxUtil,
+			&i.Capacity,
 			&i.IohDataTraffic4g,
 			&i.Availability,
 			&i.Eut,
@@ -235,8 +261,6 @@ func (q *Queries) GetRegionData(ctx context.Context, arg GetRegionDataParams) ([
 			&i.SynAckAckDelay,
 			&i.SynSynAckDelay,
 			&i.DownlinkTcpRetransmissionRate,
-			&i.MaxUtil,
-			&i.Capacity,
 			&i.TrafficOrigin,
 			&i.AvailabilityOrigin,
 			&i.EutOrigin,
@@ -272,7 +296,12 @@ func (q *Queries) GetRegionData(ctx context.Context, arg GetRegionDataParams) ([
 }
 
 const listCity = `-- name: ListCity :many
-SELECT distinct(city) FROM demarcation_site_link WHERE city !=""
+SELECT
+    distinct(city)
+FROM
+    demarcation_site_link
+WHERE
+    city != ""
 `
 
 func (q *Queries) ListCity(ctx context.Context) ([]string, error) {
@@ -299,18 +328,21 @@ func (q *Queries) ListCity(ctx context.Context) ([]string, error) {
 }
 
 const listRegion = `-- name: ListRegion :many
-SELECT distinct(region) FROM demarcation_site_link
+SELECT
+    distinct(region)
+FROM
+    demarcation_site_link
 `
 
-func (q *Queries) ListRegion(ctx context.Context) ([]string, error) {
+func (q *Queries) ListRegion(ctx context.Context) ([]sql.NullString, error) {
 	rows, err := q.db.QueryContext(ctx, listRegion)
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
-	var items []string
+	var items []sql.NullString
 	for rows.Next() {
-		var region string
+		var region sql.NullString
 		if err := rows.Scan(&region); err != nil {
 			return nil, err
 		}

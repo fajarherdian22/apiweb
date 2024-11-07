@@ -5,20 +5,30 @@
 package repository
 
 
+// Not Available
 type DemarcationSiteLink struct {
-	Date                                *string          `json:"date"`
+	Date                                *string  `json:"date"`
 	Siteid                              *string          `json:"siteid"`
 	City                                *string          `json:"city"`
-	Region                              *string          `json:"region"`
-	RanSiteLongitude                    *float64 `json:"ran_site_longitude"`
-	RanSiteLatitude                     *float64 `json:"ran_site_latitude"`
+	Region                              *string  `json:"region"`
+	Longitude                           *float64 `json:"longitude"`
+	Latitude                            *float64 `json:"latitude"`
+	LevelNeA                            *string          `json:"level_ne_a"`
+	NeA                                 *string          `json:"ne_a"`
+	InterfaceA                          *string          `json:"interface_a"`
+	TlpA                                *string          `json:"tlp_a"`
 	SiteDestination                     *string          `json:"site_destination"`
+	NeB                                 *string          `json:"ne_b"`
+	InterfaceB                          *string          `json:"interface_b"`
+	TlpB                                *string          `json:"tlp_b"`
 	LongitudeDestination                *float64 `json:"longitude_destination"`
 	LatitudeDestination                 *float64 `json:"latitude_destination"`
-	Link                                *string          `json:"link"`
-	TypeTransport                       *string          `json:"type_transport"`
-	Interface                           *string          `json:"interface"`
-	Tlp                                 *string          `json:"tlp"`
+	LevelNeB                            *string          `json:"level_ne_b"`
+	Link                                *string  `json:"link"`
+	TypeTransport                       *string  `json:"type_transport"`
+	Bandwith                            *float64 `json:"bandwith"`
+	MaxUtil                             *float64 `json:"max_util"`
+	Capacity                            *float64 `json:"capacity"`
 	IohDataTraffic4g                    *float64 `json:"ioh_data_traffic_4g"`
 	Availability                        *float64 `json:"availability"`
 	Eut                                 *float64 `json:"eut"`
@@ -39,8 +49,6 @@ type DemarcationSiteLink struct {
 	SynAckAckDelay                      *float64 `json:"syn_ack_ack_delay"`
 	SynSynAckDelay                      *float64 `json:"syn_syn_ack_delay"`
 	DownlinkTcpRetransmissionRate       *float64 `json:"downlink_tcp_retransmission_rate"`
-	MaxUtil                             *float64 `json:"max_util"`
-	Capacity                            *float64 `json:"capacity"`
 	TrafficOrigin                       *float64 `json:"traffic_origin"`
 	AvailabilityOrigin                  *float64 `json:"availability_origin"`
 	EutOrigin                           *float64 `json:"eut_origin"`
@@ -64,23 +72,23 @@ type DemarcationSiteLink struct {
 }
 
 type TopoLink struct {
-	Siteid               *string  `json:"siteid"`
-	InterfaceA           *string  `json:"interface_a"`
-	TlpA                 *string  `json:"tlp_a"`
-	City                 *string  `json:"city"`
+	Siteid               *string          `json:"siteid"`
+	InterfaceA           *string          `json:"interface_a"`
+	TlpA                 *string          `json:"tlp_a"`
+	City                 *string          `json:"city"`
 	Longitude            *float64 `json:"longitude"`
 	Latitude             *float64 `json:"latitude"`
-	NeA                  *string  `json:"ne_a"`
-	NeB                  *string  `json:"ne_b"`
-	SiteDestination      *string  `json:"site_destination"`
-	InterfaceB           *string  `json:"interface_b"`
-	TlpB                 *string  `json:"tlp_b"`
+	NeA                  *string          `json:"ne_a"`
+	NeB                  *string          `json:"ne_b"`
+	SiteDestination      *string          `json:"site_destination"`
+	InterfaceB           *string          `json:"interface_b"`
+	TlpB                 *string          `json:"tlp_b"`
 	LongitudeDestination *float64 `json:"longitude_destination"`
 	LatitudeDestination  *float64 `json:"latitude_destination"`
-	Link                 *string  `json:"link"`
-	TypeTransport        *string  `json:"type_transport"`
-	LevelNeA             *string  `json:"level_ne_a"`
-	LevelNeB             *string  `json:"level_ne_b"`
+	Link                 *string          `json:"link"`
+	TypeTransport        *string          `json:"type_transport"`
+	LevelNeA             *string          `json:"level_ne_a"`
+	LevelNeB             *string          `json:"level_ne_b"`
 	Bandwith             *float64 `json:"bandwith"`
 	MaxUtil              *float64 `json:"max_util"`
 	Capacity             *float64 `json:"capacity"`

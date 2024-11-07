@@ -10,12 +10,8 @@ import (
 )
 
 const getTopo = `-- name: GetTopo :many
-SELECT
-    siteid, interface_a, tlp_a, city, longitude, latitude, ne_a, ne_b, site_destination, interface_b, tlp_b, longitude_destination, latitude_destination, link, type_transport, level_ne_a, level_ne_b, bandwith, max_util, capacity
-FROM
-    topo_link
-WHERE
-    city != ""
+SELECT siteid, interface_a, tlp_a, city, longitude, latitude, ne_a, ne_b, site_destination, interface_b, tlp_b, longitude_destination, latitude_destination, link, type_transport, level_ne_a, level_ne_b, bandwith, max_util, capacity FROM topo_link
+WHERE city != ""
 `
 
 func (q *Queries) GetTopo(ctx context.Context) ([]TopoLink, error) {
@@ -63,12 +59,8 @@ func (q *Queries) GetTopo(ctx context.Context) ([]TopoLink, error) {
 }
 
 const getTopoCity = `-- name: GetTopoCity :many
-SELECT
-    siteid, interface_a, tlp_a, city, longitude, latitude, ne_a, ne_b, site_destination, interface_b, tlp_b, longitude_destination, latitude_destination, link, type_transport, level_ne_a, level_ne_b, bandwith, max_util, capacity
-FROM
-    topo_link
-WHERE
-    city = ?
+SELECT siteid, interface_a, tlp_a, city, longitude, latitude, ne_a, ne_b, site_destination, interface_b, tlp_b, longitude_destination, latitude_destination, link, type_transport, level_ne_a, level_ne_b, bandwith, max_util, capacity FROM topo_link
+WHERE city = ?
 `
 
 func (q *Queries) GetTopoCity(ctx context.Context, city string) ([]TopoLink, error) {
@@ -116,12 +108,7 @@ func (q *Queries) GetTopoCity(ctx context.Context, city string) ([]TopoLink, err
 }
 
 const listTopoCity = `-- name: ListTopoCity :many
-SELECT
-    distinct(city)
-FROM
-    topo_link
-WHERE
-    city != ""
+SELECT distinct(city) FROM topo_link WHERE city !=""
 `
 
 func (q *Queries) ListTopoCity(ctx context.Context) ([]string, error) {

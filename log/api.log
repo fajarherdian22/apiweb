@@ -1726,3 +1726,274 @@ time="2024-11-07T17:43:40+07:00" level=info at="2024-11-07 17:43:40" ip="[::1]:5
 time="2024-11-07T17:43:46+07:00" level=info at="2024-11-07 17:43:46" ip="[::1]:54312" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/topo/city
 time="2024-11-07T17:43:54+07:00" level=info at="2024-11-07 17:43:54" ip="[::1]:54312" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/topo/city
 time="2024-11-07T17:58:51+07:00" level=info at="2024-11-07 17:58:51" ip="[::1]:54528" method=POST payload="map[city:TANGERANG]" uri=/api/topo/city
+time="2024-11-08T00:14:34+07:00" level=info at="2024-11-08 00:14:34" ip="[::1]:54897" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:15:35+07:00" level=info at="2024-11-08 00:15:35" ip="[::1]:54935" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:15:38+07:00" level=info at="2024-11-08 00:15:38" ip="[::1]:54935" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:15:43+07:00" level=info at="2024-11-08 00:15:43" ip="[::1]:54935" method=POST payload="map[city:bandung]" uri=/api/data/city
+time="2024-11-08T00:19:12+07:00" level=info at="2024-11-08 00:19:12" ip="[::1]:55017" method=POST payload="map[city:bandung]" uri=/api/data/city
+time="2024-11-08T00:19:16+07:00" level=info at="2024-11-08 00:19:16" ip="[::1]:55017" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:35:18+07:00" level=info at="2024-11-08 00:35:18" ip="[::1]:55152" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:35:18+07:00" level=info at="2024-11-08 00:35:18" ip="[::1]:55153" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:35:18+07:00" level=info at="2024-11-08 00:35:18" ip="[::1]:55154" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:35:19+07:00" level=info at="2024-11-08 00:35:19" ip="[::1]:55154" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:35:34+07:00" level=info at="2024-11-08 00:35:34" ip="[::1]:55163" method=POST payload="map[city:CIAMIS]" uri=/api/topo/city
+time="2024-11-08T00:40:29+07:00" level=info at="2024-11-08 00:40:29" ip="[::1]:55228" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:40:29+07:00" level=info at="2024-11-08 00:40:29" ip="[::1]:55229" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:40:29+07:00" level=info at="2024-11-08 00:40:29" ip="[::1]:55227" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:40:29+07:00" level=info at="2024-11-08 00:40:29" ip="[::1]:55228" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:41:25+07:00" level=info at="2024-11-08 00:41:25" ip="[::1]:55247" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:41:25+07:00" level=info at="2024-11-08 00:41:25" ip="[::1]:55249" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:41:25+07:00" level=info at="2024-11-08 00:41:25" ip="[::1]:55248" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:41:25+07:00" level=info at="2024-11-08 00:41:25" ip="[::1]:55248" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:41:32+07:00" level=info at="2024-11-08 00:41:32" ip="[::1]:55267" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:41:32+07:00" level=info at="2024-11-08 00:41:32" ip="[::1]:55265" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:41:32+07:00" level=info at="2024-11-08 00:41:32" ip="[::1]:55266" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:41:32+07:00" level=info at="2024-11-08 00:41:32" ip="[::1]:55267" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:42:08+07:00" level=info at="2024-11-08 00:42:08" ip="[::1]:55276" method=POST payload="map[city:CIAMIS]" uri=/api/topo/city
+time="2024-11-08T00:43:26+07:00" level=info at="2024-11-08 00:43:26" ip="[::1]:55339" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:43:26+07:00" level=info at="2024-11-08 00:43:26" ip="[::1]:55337" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:43:26+07:00" level=info at="2024-11-08 00:43:26" ip="[::1]:55338" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/topo/city
+time="2024-11-08T00:43:26+07:00" level=info at="2024-11-08 00:43:26" ip="[::1]:55338" method=GET payload="map[]" uri=/api/topo/list/city
+time="2024-11-08T00:44:22+07:00" level=info at="2024-11-08 00:44:22" ip="[::1]:55583" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:44:22+07:00" level=info at="2024-11-08 00:44:22" ip="[::1]:55584" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:44:27+07:00" level=info at="2024-11-08 00:44:27" ip="[::1]:55609" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:44:27+07:00" level=info at="2024-11-08 00:44:27" ip="[::1]:55610" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:44:27+07:00" level=info at="2024-11-08 00:44:27" ip="[::1]:55611" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:44:27+07:00" level=info at="2024-11-08 00:44:27" ip="[::1]:55609" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:44:45+07:00" level=info at="2024-11-08 00:44:45" ip="[::1]:55679" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T00:44:59+07:00" level=info at="2024-11-08 00:44:59" ip="[::1]:55685" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:44:59+07:00" level=info at="2024-11-08 00:44:59" ip="[::1]:55684" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:45:17+07:00" level=info at="2024-11-08 00:45:17" ip="[::1]:55708" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:45:17+07:00" level=info at="2024-11-08 00:45:17" ip="[::1]:55710" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:45:17+07:00" level=info at="2024-11-08 00:45:17" ip="[::1]:55709" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:45:17+07:00" level=info at="2024-11-08 00:45:17" ip="[::1]:55711" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:45:32+07:00" level=info at="2024-11-08 00:45:32" ip="[::1]:55717" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:50:44+07:00" level=info at="2024-11-08 00:50:44" ip="[::1]:55791" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:50:44+07:00" level=info at="2024-11-08 00:50:44" ip="[::1]:55792" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:50:44+07:00" level=info at="2024-11-08 00:50:44" ip="[::1]:55793" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:50:44+07:00" level=info at="2024-11-08 00:50:44" ip="[::1]:55791" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:50:46+07:00" level=info at="2024-11-08 00:50:46" ip="[::1]:55791" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:50:46+07:00" level=info at="2024-11-08 00:50:46" ip="[::1]:55792" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:50:46+07:00" level=info at="2024-11-08 00:50:46" ip="[::1]:55793" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:50:46+07:00" level=info at="2024-11-08 00:50:46" ip="[::1]:55793" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:50:49+07:00" level=info at="2024-11-08 00:50:49" ip="[::1]:55800" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T00:51:28+07:00" level=info at="2024-11-08 00:51:28" ip="[::1]:55811" method=POST payload="map[city:ciamis]" uri=/api/data/city
+time="2024-11-08T00:55:48+07:00" level=info at="2024-11-08 00:55:48" ip="[::1]:55862" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T00:55:48+07:00" level=info at="2024-11-08 00:55:48" ip="[::1]:55864" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:55:48+07:00" level=info at="2024-11-08 00:55:48" ip="[::1]:55863" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T00:55:48+07:00" level=info at="2024-11-08 00:55:48" ip="[::1]:55862" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:05:34+07:00" level=info at="2024-11-08 01:05:34" ip="[::1]:56012" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:05:34+07:00" level=info at="2024-11-08 01:05:34" ip="[::1]:56011" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:05:34+07:00" level=info at="2024-11-08 01:05:34" ip="[::1]:56010" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:05:34+07:00" level=info at="2024-11-08 01:05:34" ip="[::1]:56010" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:06:33+07:00" level=info at="2024-11-08 01:06:33" ip="[::1]:56042" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:06:33+07:00" level=info at="2024-11-08 01:06:33" ip="[::1]:56041" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:06:33+07:00" level=info at="2024-11-08 01:06:33" ip="[::1]:56043" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:06:33+07:00" level=info at="2024-11-08 01:06:33" ip="[::1]:56041" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:06:47+07:00" level=info at="2024-11-08 01:06:47" ip="[::1]:56048" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/data/city
+time="2024-11-08T01:11:28+07:00" level=info at="2024-11-08 01:11:28" ip="[::1]:56126" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:11:28+07:00" level=info at="2024-11-08 01:11:28" ip="[::1]:56125" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:11:28+07:00" level=info at="2024-11-08 01:11:28" ip="[::1]:56127" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:11:28+07:00" level=info at="2024-11-08 01:11:28" ip="[::1]:56128" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:13:09+07:00" level=info at="2024-11-08 01:13:09" ip="[::1]:56151" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/data/city
+time="2024-11-08T01:14:58+07:00" level=info at="2024-11-08 01:14:58" ip="[::1]:56170" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:14:58+07:00" level=info at="2024-11-08 01:14:58" ip="[::1]:56172" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:14:58+07:00" level=info at="2024-11-08 01:14:58" ip="[::1]:56171" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:14:58+07:00" level=info at="2024-11-08 01:14:58" ip="[::1]:56170" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:15:24+07:00" level=info at="2024-11-08 01:15:24" ip="[::1]:56179" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T01:15:42+07:00" level=info at="2024-11-08 01:15:42" ip="[::1]:56185" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:17:59+07:00" level=info at="2024-11-08 01:17:59" ip="[::1]:56246" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:17:59+07:00" level=info at="2024-11-08 01:17:59" ip="[::1]:56244" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:17:59+07:00" level=info at="2024-11-08 01:17:59" ip="[::1]:56245" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:17:59+07:00" level=info at="2024-11-08 01:17:59" ip="[::1]:56249" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:20:44+07:00" level=info at="2024-11-08 01:20:44" ip="[::1]:56269" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/data/city
+time="2024-11-08T01:23:17+07:00" level=info at="2024-11-08 01:23:17" ip="[::1]:56310" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:23:17+07:00" level=info at="2024-11-08 01:23:17" ip="[::1]:56308" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:23:17+07:00" level=info at="2024-11-08 01:23:17" ip="[::1]:56309" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:23:17+07:00" level=info at="2024-11-08 01:23:17" ip="[::1]:56313" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:25:27+07:00" level=info at="2024-11-08 01:25:27" ip="[::1]:56337" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:25:27+07:00" level=info at="2024-11-08 01:25:27" ip="[::1]:56335" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:25:27+07:00" level=info at="2024-11-08 01:25:27" ip="[::1]:56336" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:25:27+07:00" level=info at="2024-11-08 01:25:27" ip="[::1]:56340" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:26:08+07:00" level=info at="2024-11-08 01:26:08" ip="[::1]:56342" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/data/city
+time="2024-11-08T01:31:24+07:00" level=info at="2024-11-08 01:31:24" ip="[::1]:56412" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:31:24+07:00" level=info at="2024-11-08 01:31:24" ip="[::1]:56410" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:31:24+07:00" level=info at="2024-11-08 01:31:24" ip="[::1]:56411" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:31:24+07:00" level=info at="2024-11-08 01:31:24" ip="[::1]:56416" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:42:25+07:00" level=info at="2024-11-08 01:42:25" ip="[::1]:56572" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:42:25+07:00" level=info at="2024-11-08 01:42:25" ip="[::1]:56574" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:42:25+07:00" level=info at="2024-11-08 01:42:25" ip="[::1]:56573" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:42:25+07:00" level=info at="2024-11-08 01:42:25" ip="[::1]:56572" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:43:17+07:00" level=info at="2024-11-08 01:43:17" ip="[::1]:56587" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:43:17+07:00" level=info at="2024-11-08 01:43:17" ip="[::1]:56589" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:43:17+07:00" level=info at="2024-11-08 01:43:17" ip="[::1]:56588" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:43:17+07:00" level=info at="2024-11-08 01:43:17" ip="[::1]:56587" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:05+07:00" level=info at="2024-11-08 01:44:05" ip="[::1]:56599" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:05+07:00" level=info at="2024-11-08 01:44:05" ip="[::1]:56601" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:05+07:00" level=info at="2024-11-08 01:44:05" ip="[::1]:56600" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:05+07:00" level=info at="2024-11-08 01:44:05" ip="[::1]:56599" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:06+07:00" level=info at="2024-11-08 01:44:06" ip="[::1]:56600" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:06+07:00" level=info at="2024-11-08 01:44:06" ip="[::1]:56599" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:06+07:00" level=info at="2024-11-08 01:44:06" ip="[::1]:56601" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:06+07:00" level=info at="2024-11-08 01:44:06" ip="[::1]:56606" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:15+07:00" level=info at="2024-11-08 01:44:15" ip="[::1]:56615" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:15+07:00" level=info at="2024-11-08 01:44:15" ip="[::1]:56616" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:15+07:00" level=info at="2024-11-08 01:44:15" ip="[::1]:56614" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:15+07:00" level=info at="2024-11-08 01:44:15" ip="[::1]:56617" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:31+07:00" level=info at="2024-11-08 01:44:31" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:42+07:00" level=info at="2024-11-08 01:44:42" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:42+07:00" level=info at="2024-11-08 01:44:42" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:44:42+07:00" level=info at="2024-11-08 01:44:42" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:44:42+07:00" level=info at="2024-11-08 01:44:42" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:03+07:00" level=info at="2024-11-08 01:47:03" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:03+07:00" level=info at="2024-11-08 01:47:03" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:03+07:00" level=info at="2024-11-08 01:47:03" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:03+07:00" level=info at="2024-11-08 01:47:03" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:27+07:00" level=info at="2024-11-08 01:47:27" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:27+07:00" level=info at="2024-11-08 01:47:27" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:27+07:00" level=info at="2024-11-08 01:47:27" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:28+07:00" level=info at="2024-11-08 01:47:28" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:35+07:00" level=info at="2024-11-08 01:47:35" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:35+07:00" level=info at="2024-11-08 01:47:35" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:35+07:00" level=info at="2024-11-08 01:47:35" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:35+07:00" level=info at="2024-11-08 01:47:35" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:44+07:00" level=info at="2024-11-08 01:47:44" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:47:44+07:00" level=info at="2024-11-08 01:47:44" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:44+07:00" level=info at="2024-11-08 01:47:44" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:47:44+07:00" level=info at="2024-11-08 01:47:44" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:25+07:00" level=info at="2024-11-08 01:48:25" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:25+07:00" level=info at="2024-11-08 01:48:25" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:25+07:00" level=info at="2024-11-08 01:48:25" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:26+07:00" level=info at="2024-11-08 01:48:26" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:28+07:00" level=info at="2024-11-08 01:48:28" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:28+07:00" level=info at="2024-11-08 01:48:28" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:28+07:00" level=info at="2024-11-08 01:48:28" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:28+07:00" level=info at="2024-11-08 01:48:28" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:52+07:00" level=info at="2024-11-08 01:48:52" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:48:52+07:00" level=info at="2024-11-08 01:48:52" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:52+07:00" level=info at="2024-11-08 01:48:52" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:48:52+07:00" level=info at="2024-11-08 01:48:52" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:49:20+07:00" level=info at="2024-11-08 01:49:20" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:49:20+07:00" level=info at="2024-11-08 01:49:20" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:49:20+07:00" level=info at="2024-11-08 01:49:20" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:49:20+07:00" level=info at="2024-11-08 01:49:20" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:22+07:00" level=info at="2024-11-08 01:50:22" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:22+07:00" level=info at="2024-11-08 01:50:22" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:22+07:00" level=info at="2024-11-08 01:50:22" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:22+07:00" level=info at="2024-11-08 01:50:22" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:26+07:00" level=info at="2024-11-08 01:50:26" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:26+07:00" level=info at="2024-11-08 01:50:26" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:26+07:00" level=info at="2024-11-08 01:50:26" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:26+07:00" level=info at="2024-11-08 01:50:26" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:31+07:00" level=info at="2024-11-08 01:50:31" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:31+07:00" level=info at="2024-11-08 01:50:31" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:31+07:00" level=info at="2024-11-08 01:50:31" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:31+07:00" level=info at="2024-11-08 01:50:31" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:33+07:00" level=info at="2024-11-08 01:50:33" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:33+07:00" level=info at="2024-11-08 01:50:33" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:33+07:00" level=info at="2024-11-08 01:50:33" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:33+07:00" level=info at="2024-11-08 01:50:33" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:42+07:00" level=info at="2024-11-08 01:50:42" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:50:42+07:00" level=info at="2024-11-08 01:50:42" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:42+07:00" level=info at="2024-11-08 01:50:42" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:50:42+07:00" level=info at="2024-11-08 01:50:42" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:51:01+07:00" level=info at="2024-11-08 01:51:01" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:51:01+07:00" level=info at="2024-11-08 01:51:01" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:51:01+07:00" level=info at="2024-11-08 01:51:01" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:51:01+07:00" level=info at="2024-11-08 01:51:01" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:51:59+07:00" level=info at="2024-11-08 01:51:59" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:51:59+07:00" level=info at="2024-11-08 01:51:59" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:51:59+07:00" level=info at="2024-11-08 01:51:59" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:00+07:00" level=info at="2024-11-08 01:52:00" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:02+07:00" level=info at="2024-11-08 01:52:02" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:02+07:00" level=info at="2024-11-08 01:52:02" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:02+07:00" level=info at="2024-11-08 01:52:02" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:02+07:00" level=info at="2024-11-08 01:52:02" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:07+07:00" level=info at="2024-11-08 01:52:07" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:07+07:00" level=info at="2024-11-08 01:52:07" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:07+07:00" level=info at="2024-11-08 01:52:07" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:07+07:00" level=info at="2024-11-08 01:52:07" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:12+07:00" level=info at="2024-11-08 01:52:12" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:12+07:00" level=info at="2024-11-08 01:52:12" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:12+07:00" level=info at="2024-11-08 01:52:12" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:12+07:00" level=info at="2024-11-08 01:52:12" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:40+07:00" level=info at="2024-11-08 01:52:40" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:52:40+07:00" level=info at="2024-11-08 01:52:40" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:40+07:00" level=info at="2024-11-08 01:52:40" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:52:40+07:00" level=info at="2024-11-08 01:52:40" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:53:28+07:00" level=info at="2024-11-08 01:53:28" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:53:28+07:00" level=info at="2024-11-08 01:53:28" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:53:28+07:00" level=info at="2024-11-08 01:53:28" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:53:28+07:00" level=info at="2024-11-08 01:53:28" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:53:29+07:00" level=info at="2024-11-08 01:53:29" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:53:29+07:00" level=info at="2024-11-08 01:53:29" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:53:29+07:00" level=info at="2024-11-08 01:53:29" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:53:29+07:00" level=info at="2024-11-08 01:53:29" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:54:22+07:00" level=info at="2024-11-08 01:54:22" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:54:22+07:00" level=info at="2024-11-08 01:54:22" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:54:22+07:00" level=info at="2024-11-08 01:54:22" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:54:23+07:00" level=info at="2024-11-08 01:54:23" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:54:25+07:00" level=info at="2024-11-08 01:54:25" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:54:25+07:00" level=info at="2024-11-08 01:54:25" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:54:25+07:00" level=info at="2024-11-08 01:54:25" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:54:25+07:00" level=info at="2024-11-08 01:54:25" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:55:00+07:00" level=info at="2024-11-08 01:55:00" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:55:00+07:00" level=info at="2024-11-08 01:55:00" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:55:00+07:00" level=info at="2024-11-08 01:55:00" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:55:00+07:00" level=info at="2024-11-08 01:55:00" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:55:01+07:00" level=info at="2024-11-08 01:55:01" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:55:01+07:00" level=info at="2024-11-08 01:55:01" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:55:01+07:00" level=info at="2024-11-08 01:55:01" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:55:01+07:00" level=info at="2024-11-08 01:55:01" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:55:13+07:00" level=info at="2024-11-08 01:55:13" ip="[::1]:56640" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T01:57:34+07:00" level=info at="2024-11-08 01:57:34" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:57:34+07:00" level=info at="2024-11-08 01:57:34" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:57:34+07:00" level=info at="2024-11-08 01:57:34" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:57:34+07:00" level=info at="2024-11-08 01:57:34" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:57:43+07:00" level=info at="2024-11-08 01:57:43" ip="[::1]:56644" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T01:58:46+07:00" level=info at="2024-11-08 01:58:46" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:58:46+07:00" level=info at="2024-11-08 01:58:46" ip="[::1]:56641" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:58:46+07:00" level=info at="2024-11-08 01:58:46" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T01:58:46+07:00" level=info at="2024-11-08 01:58:46" ip="[::1]:56640" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T01:58:53+07:00" level=info at="2024-11-08 01:58:53" ip="[::1]:56641" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T02:02:16+07:00" level=info at="2024-11-08 02:02:16" ip="[::1]:56692" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:02:16+07:00" level=info at="2024-11-08 02:02:16" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:02:16+07:00" level=info at="2024-11-08 02:02:16" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:02:16+07:00" level=info at="2024-11-08 02:02:16" ip="[::1]:56644" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:03:40+07:00" level=info at="2024-11-08 02:03:40" ip="[::1]:56644" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:03:40+07:00" level=info at="2024-11-08 02:03:40" ip="[::1]:56692" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:03:40+07:00" level=info at="2024-11-08 02:03:40" ip="[::1]:56640" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:03:40+07:00" level=info at="2024-11-08 02:03:40" ip="[::1]:56641" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:03:48+07:00" level=info at="2024-11-08 02:03:48" ip="[::1]:56641" method=POST payload="map[city:TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:03:59+07:00" level=info at="2024-11-08 02:03:59" ip="[::1]:56641" method=POST payload="map[city:CIAMIS]" uri=/api/data/city
+time="2024-11-08T02:14:39+07:00" level=info at="2024-11-08 02:14:39" ip="[::1]:58462" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:14:39+07:00" level=info at="2024-11-08 02:14:39" ip="[::1]:58463" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:14:39+07:00" level=info at="2024-11-08 02:14:39" ip="[::1]:58464" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:14:39+07:00" level=info at="2024-11-08 02:14:39" ip="[::1]:58462" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:15:17+07:00" level=info at="2024-11-08 02:15:17" ip="[::1]:58463" method=POST payload="map[city:BANDUNG]" uri=/api/data/city
+time="2024-11-08T02:15:32+07:00" level=info at="2024-11-08 02:15:32" ip="[::1]:58463" method=POST payload="map[city:KOTA MAKASSAR]" uri=/api/data/city
+time="2024-11-08T02:18:33+07:00" level=info at="2024-11-08 02:18:33" ip="[::1]:58632" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:18:33+07:00" level=info at="2024-11-08 02:18:33" ip="[::1]:58631" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:18:33+07:00" level=info at="2024-11-08 02:18:33" ip="[::1]:58633" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:18:33+07:00" level=info at="2024-11-08 02:18:33" ip="[::1]:58636" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:21:41+07:00" level=info at="2024-11-08 02:21:41" ip="[::1]:58788" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:21:41+07:00" level=info at="2024-11-08 02:21:41" ip="[::1]:58787" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:21:41+07:00" level=info at="2024-11-08 02:21:41" ip="[::1]:58786" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:21:41+07:00" level=info at="2024-11-08 02:21:41" ip="[::1]:58791" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:22:01+07:00" level=info at="2024-11-08 02:22:01" ip="[::1]:58810" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:22:01+07:00" level=info at="2024-11-08 02:22:01" ip="[::1]:58808" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:22:01+07:00" level=info at="2024-11-08 02:22:01" ip="[::1]:58809" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:22:01+07:00" level=info at="2024-11-08 02:22:01" ip="[::1]:58809" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:36:46+07:00" level=info at="2024-11-08 02:36:46" ip="[::1]:59923" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:36:46+07:00" level=info at="2024-11-08 02:36:46" ip="[::1]:59921" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:36:46+07:00" level=info at="2024-11-08 02:36:46" ip="[::1]:59922" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:36:46+07:00" level=info at="2024-11-08 02:36:46" ip="[::1]:59930" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:38:14+07:00" level=info at="2024-11-08 02:38:14" ip="[::1]:59996" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:38:14+07:00" level=info at="2024-11-08 02:38:14" ip="[::1]:59994" method=GET payload="map[]" uri=/api/data/list/city
+time="2024-11-08T02:38:14+07:00" level=info at="2024-11-08 02:38:14" ip="[::1]:59995" method=POST payload="map[city:KOTA TASIKMALAYA]" uri=/api/data/city
+time="2024-11-08T02:38:14+07:00" level=info at="2024-11-08 02:38:14" ip="[::1]:59994" method=GET payload="map[]" uri=/api/data/list/city

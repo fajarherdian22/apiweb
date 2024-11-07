@@ -21,12 +21,9 @@ func NewService(q *repository.Queries, db *sql.DB) *DataServiceImpl {
 	}
 }
 
-func (service *DataServiceImpl) GetDataCity(ctx context.Context, Date, city string) ([]repository.DemarcationSiteLink, error) {
-	payload := repository.GetCityDataParams{
-		Date: Date,
-		City: city,
-	}
-	data, err := service.q.GetCityData(ctx, payload)
+func (service *DataServiceImpl) GetDataCity(ctx context.Context, city string) ([]repository.DemarcationSiteLink, error) {
+
+	data, err := service.q.GetCityData(ctx, city)
 	if err != nil {
 		if err == sql.ErrNoRows {
 			return nil, fmt.Errorf("No Data to retrieve")
