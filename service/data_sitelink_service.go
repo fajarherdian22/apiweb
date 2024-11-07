@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 	"database/sql"
+	"fmt"
 
 	"github.com/fajarherdian22/apiweb/helper"
 	"github.com/fajarherdian22/apiweb/repository"
@@ -26,13 +27,37 @@ func (service *DataServiceImpl) GetDataCity(ctx context.Context, Date, city stri
 		City: city,
 	}
 	data, err := service.q.GetCityData(ctx, payload)
-	helper.IsError(err)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return nil, fmt.Errorf("No Data to retrieve")
+		}
+		return data, err
+	}
 
 	return data, nil
 }
 
 func (service *DataServiceImpl) ListCity(ctx context.Context) ([]string, error) {
 	data, err := service.q.ListCity(ctx)
+	helper.IsError(err)
+
+	return data, nil
+}
+
+func (service *DataServiceImpl) GetTopoCity(ctx context.Context, city string) ([]repository.TopoLink, error) {
+
+	data, err := service.q.GetTopoCity(ctx, city)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return nil, fmt.Errorf("No Data to retrieve")
+		}
+		return data, err
+	}
+	return data, nil
+}
+
+func (service *DataServiceImpl) ListCityTopo(ctx context.Context) ([]string, error) {
+	data, err := service.q.ListTopoCity(ctx)
 	helper.IsError(err)
 
 	return data, nil

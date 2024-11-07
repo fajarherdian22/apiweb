@@ -20,12 +20,11 @@ func NewDataController(dataService *service.DataServiceImpl) *DataController {
 
 func (controller *DataController) GetCityLink(c *gin.Context) {
 
-	type CityLinkRequest struct {
+	var req struct {
 		Date string `json:"date" binding:"required"`
 		City string `json:"city" binding:"required"`
 	}
 
-	var req CityLinkRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
 		c.JSON(http.StatusBadRequest, helper.ErrorResponse(err))
 		return
@@ -36,6 +35,30 @@ func (controller *DataController) GetCityLink(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve data"})
 		return
 	}
+
+	responseCode := 200
+	responseStatus := true
+
+	if helper.HandlingNullData(data) {
+		responseCode = 400
+		responseStatus = false
+	}
+
+	WebResponse := web.WebResponse{
+		Code:   responseCode,
+		Data:   data,
+		Status: responseStatus,
+	}
+
+	helper.HandleEncodeWriteJson(c, WebResponse)
+}
+
+func (controller *DataController) ListCity(c *gin.Context) {
+	data, err := controller.dataService.ListCity(c)
+	if err != nil {
+		helper.ErrorResponse(err)
+	}
+	sort.Strings(data)
 	WebResponse := web.WebResponse{
 		Code:   200,
 		Data:   data,
@@ -45,8 +68,42 @@ func (controller *DataController) GetCityLink(c *gin.Context) {
 	helper.HandleEncodeWriteJson(c, WebResponse)
 }
 
-func (controller *DataController) ListCity(c *gin.Context) {
-	data, err := controller.dataService.ListCity(c)
+func (controller *DataController) GetCityTopo(c *gin.Context) {
+
+	var req struct {
+		City string `json:"city" binding:"required"`
+	}
+
+	if err := c.ShouldBindJSON(&req); err != nil {
+		c.JSON(http.StatusBadRequest, helper.ErrorResponse(err))
+		return
+	}
+
+	data, err := controller.dataService.GetTopoCity(c.Request.Context(), req.City)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve data"})
+		return
+	}
+
+	responseCode := 200
+	responseStatus := true
+
+	if len(data) == 0 {
+		responseCode = 400
+		responseStatus = false
+	}
+
+	WebResponse := web.WebResponse{
+		Code:   responseCode,
+		Data:   data,
+		Status: responseStatus,
+	}
+
+	helper.HandleEncodeWriteJson(c, WebResponse)
+}
+
+func (controller *DataController) ListCityTopo(c *gin.Context) {
+	data, err := controller.dataService.ListCityTopo(c)
 	if err != nil {
 		helper.ErrorResponse(err)
 	}

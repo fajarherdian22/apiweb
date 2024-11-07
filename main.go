@@ -36,9 +36,9 @@ func main() {
 	router.Use(cors.New(cors.Config{
 		AllowAllOrigins: true,
 		AllowMethods:    []string{"POST", "GET"},
-		// AllowHeaders:    []string{"Content-Type", "Origin", "X-AUTH"},
-		ExposeHeaders: []string{"Content-Length"},
-		MaxAge:        12 * time.Hour,
+		AllowHeaders:    []string{"Content-Type", "Origin"},
+		ExposeHeaders:   []string{"Content-Length"},
+		MaxAge:          12 * time.Hour,
 	}))
 
 	// db.NewRedisClient(viper.GetString("redis.host"), viper.GetString("redis.password"))
@@ -50,6 +50,8 @@ func main() {
 	{
 		r.POST("/data/city", dataController.GetCityLink)
 		r.GET("/data/list/city", dataController.ListCity)
+		r.POST("topo/city", dataController.GetCityTopo)
+		r.GET("/topo/list/city", dataController.ListCityTopo)
 	}
 
 	if err := router.Run(":8080"); err != nil {

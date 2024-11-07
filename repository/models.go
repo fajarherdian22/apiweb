@@ -5,7 +5,6 @@
 package repository
 
 
-
 type DemarcationSiteLink struct {
 	Date                                *string          `json:"date"`
 	Siteid                              *string          `json:"siteid"`
@@ -62,4 +61,27 @@ type DemarcationSiteLink struct {
 	SynAckAckDelayOrigin                *float64 `json:"syn_ack_ack_delay_origin"`
 	SynSynAckDelayOrigin                *float64 `json:"syn_syn_ack_delay_origin"`
 	DownlinkTcpRetransmissionRateOrigin *float64 `json:"downlink_tcp_retransmission_rate_origin"`
+}
+
+type TopoLink struct {
+	Siteid               *string  `json:"siteid"`
+	InterfaceA           *string  `json:"interface_a"`
+	TlpA                 *string  `json:"tlp_a"`
+	City                 *string  `json:"city"`
+	Longitude            *float64 `json:"longitude"`
+	Latitude             *float64 `json:"latitude"`
+	NeA                  *string  `json:"ne_a"`
+	NeB                  *string  `json:"ne_b"`
+	SiteDestination      *string  `json:"site_destination"`
+	InterfaceB           *string  `json:"interface_b"`
+	TlpB                 *string  `json:"tlp_b"`
+	LongitudeDestination *float64 `json:"longitude_destination"`
+	LatitudeDestination  *float64 `json:"latitude_destination"`
+	Link                 *string  `json:"link"`
+	TypeTransport        *string  `json:"type_transport"`
+	LevelNeA             *string  `json:"level_ne_a"`
+	LevelNeB             *string  `json:"level_ne_b"`
+	Bandwith             *float64 `json:"bandwith"`
+	MaxUtil              *float64 `json:"max_util"`
+	Capacity             *float64 `json:"capacity"`
 }

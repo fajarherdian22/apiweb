@@ -1,7 +1,7 @@
 databases:
   db_credential:
-    user: "admin" # Database username
-    password: "admin1234" # Database password
-    host: "localhost" # Database host
-    port: 3306 # Database port
-    dbname: "dashboard" # Database name
+    user: "admin"
+    password: "admin1234"
+    host: "localhost"
+    port: 3306
+    dbname: "dashboard"

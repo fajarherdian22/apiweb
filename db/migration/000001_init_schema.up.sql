@@ -57,3 +57,27 @@ CREATE TABLE IF NOT EXISTS `demarcation_site_link` (
     PRIMARY KEY (`date`, `siteid`, `site_destination`),
     KEY `date` (`date`)
 );
+
+CREATE TABLE topo_link (
+    siteid VARCHAR(50) not NULL,
+    interface_a VARCHAR(100) not NULL,
+    TLP_a VARCHAR(100) not NULL,
+    city VARCHAR(100) not NULL,
+    longitude double NULL,
+    latitude double NULL,
+    ne_a VARCHAR(100) not NULL,
+    ne_b VARCHAR(100) not NULL,
+    site_destination VARCHAR(50) not NULL,
+    interface_b VARCHAR(100) not NULL,
+    TLP_b VARCHAR(100) not NULL,
+    longitude_destination double NULL,
+    latitude_destination double NULL,
+    link VARCHAR(100) not NULL,
+    type_transport VARCHAR(20) not NULL,
+    level_ne_a VARCHAR(50) not NULL,
+    level_ne_b VARCHAR(50) not NULL,
+    bandwith double NULL,
+    max_util double NULL,
+    capacity double NULL,
+    INDEX idx_city (city)
+);

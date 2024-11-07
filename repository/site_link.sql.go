@@ -11,7 +11,7 @@ import (
 
 const getCityData = `-- name: GetCityData :many
 SELECT date, siteid, city, region, ran_site_longitude, ran_site_latitude, site_destination, longitude_destination, latitude_destination, link, type_transport, interface, tlp, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, max_util, capacity, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin FROM demarcation_site_link
-WHERE date = ? and city = ? LIMIT 10
+WHERE date = ? and city = ?
 `
 
 type GetCityDataParams struct {
@@ -100,7 +100,7 @@ func (q *Queries) GetCityData(ctx context.Context, arg GetCityDataParams) ([]Dem
 
 const getDataByDate = `-- name: GetDataByDate :many
 SELECT date, siteid, city, region, ran_site_longitude, ran_site_latitude, site_destination, longitude_destination, latitude_destination, link, type_transport, interface, tlp, ioh_data_traffic_4g, availability, eut, cqi, prb, accesibility, s1_sr, erab_drop, rrc_sr, erab_sr, inter_freq, intra_freq, irat_hosr, ul_rssi, se_dl, csfb_prep_sr, csfb_sr, syn_ack_ack_delay, syn_syn_ack_delay, downlink_tcp_retransmission_rate, max_util, capacity, traffic_origin, availability_origin, eut_origin, cqi_origin, prb_origin, accesibility_origin, s1_sr_origin, erab_drop_origin, rrc_sr_origin, erab_sr_origin, inter_freq_origin, intra_freq_origin, irat_hosr_origin, ul_rssi_origin, se_dl_origin, csfb_prep_sr_origin, csfb_sr_origin, syn_ack_ack_delay_origin, syn_syn_ack_delay_origin, downlink_tcp_retransmission_rate_origin FROM demarcation_site_link
-WHERE date = ?
+WHERE date = ? and city != ""
 `
 
 func (q *Queries) GetDataByDate(ctx context.Context, date string) ([]DemarcationSiteLink, error) {
@@ -272,7 +272,7 @@ func (q *Queries) GetRegionData(ctx context.Context, arg GetRegionDataParams) ([
 }
 
 const listCity = `-- name: ListCity :many
-SELECT distinct(city) FROM demarcation_site_link
+SELECT distinct(city) FROM demarcation_site_link WHERE city !=""
 `
 
 func (q *Queries) ListCity(ctx context.Context) ([]string, error) {
